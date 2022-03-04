@@ -1,0 +1,102 @@
+html,
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    animation: none;
+    background: linear-gradient(3deg, #8f92ff, #6bf5ff7d);
+    padding: 10px;
+    border: none;
+    height: 96.6%;
+    width: 100%;
+}
+
+.caixas {
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+    margin: auto -15px;
+    height: 200px;
+    margin: auto;
+    width: 23%;
+    box-sizing: border-box;
+}
+
+input {
+    margin: 2px;
+}
+
+button::after {
+    content: "";
+    background: #ffffff;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+}
+
+button::after {
+    transition: all 0.35s;
+}
+
+button:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+}
+
+button {
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    padding: 14px 20px;
+    background: #4fb8fd;
+    color: #fff;
+    border-radius: 6px;
+    margin: 8px 0;
+    width: 100%;
+    border: none;
+    position: relative;
+    font-size: 1em;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button:hover {
+    color: #3498db;
+}
+
+button[class^=button]:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+}
+
+button.button::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+}
+
+div.caixa {
+    height: 87%;
+    margin: auto;
+    width: 23%;
+    box-sizing: border-box;
+}
